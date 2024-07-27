@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Iman Jimoh personal portfolio website">
+    <meta name="author" content="ImanJimoh">
+    <title>Iman Jimoh's Portfolio</title>
+
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- floating alert buttotnf for email sucess -->
+     <div id="alert-box" class="alert alert-info alert-dismissible fade show" role="alert" style="display: none;">
+        <span id="alert-message">imanj1470@gmail.com copied to clipboard!</span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="closeAlertBox()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+  
+    
+     
+
+    
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Portfolio</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#abt_me">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#skills_me">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#experience_me">Experience</a>
+                </li>
+
+                <li class="item ml-md-3">
+                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact me
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/imanjimoh/"  target = "_blank">LinkedIn</a>
+                        <button class="dropdown-item" onclick="copy_email_to_clipboard()" >Email</button>
+                        <a class="dropdown-item" href="https://github.com/imanj1470" target ="_blank">GitHub</a>
+                        <button class="dropdown-item" onclick="openresume()" target = "_blank">Resume</button>
+
+                        <button class="dropdown-item" onclick="copy_email_to_clipboard()">alerttester</button>
+
+                     </div>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">compoentns</a>
+                </li>
+
+
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+    
+
+    <!-- page header -->
+    <header id="home" class="header">
+        
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I'm Iman Jimoh</span>
+            </h1>
+            <p class="header-subtitle">Software developer</p>            
+            <button class="btn btn-primary" onclick="window.open('https://www.linkedin.com/in/imanjimoh/', '_blank')">Connect with me on LinkedIn</button>
+
+            
+
+        </div>              
+    </header><!-- end of page header -->
+<p id = "abt_me"></p>
+    <div  class="section">
+        <div class="container">
+            <h6 class="section-title mb-6">About me ?</h6>
+            <p>
+                I'm an aspiring prospect Software engineer who is looking to study Computer Science at the University of Cambdridge. I currently study 4 A-levels at Hill House School and I'm predicted 4 A*'s in the following subjects: 
+                <ul>
+                    <li>
+                        Computer Science
+                    </li>
+                    <li>
+                        Maths
+                    </li>
+                    <li>
+                        Further Maths
+                    </li>
+                    <li>
+                        Physics
+                    </li>
+
+                </ul>
+                <br>
+                <p>I have recently been accepted into the Software Engineering Fellowship programme with <u><b><a href="app.headstarter.com">Headstarter AI</a></b></u>. This programme involves building 5 AI projects over the span of five weeks. The final project entails creating a startup with a team, aiming to attract 1000+ users.</p>
+            </p>
+        </div>
+    </div>
+
+    <!-- 
+            <div class="about">
+                <div class="about-img-holder">
+             
+                </div>
+                <div class="about-caption">
+                   
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        I'm an aspiring prospect Software engineer who is looking to study Computer Science at the University of Cambdridge. I currently study 4 A-levels at Hill House School. I'm predicted 4 A*'s in the following subjects: 
+                        <ul>
+                            <li>
+                                Computer Science
+                            </li>
+                            <li>
+                                Maths
+                            </li>
+                            <li>
+                                Further Maths
+                            </li>
+                            <li>
+                                Physics
+                            </li>
+
+                        </ul>
+                        <br>
+                        <p>I have recently been accepted into the Software Engineering Fellowship programme with <u><b><a href="app.headstarter.com">Headstarter AI</a></b></u>. This programme involves building 5 AI projects over the span of five weeks. The final project entails creating a startup with a team, aiming to attract 1000+ users.</p>
+                    </p>   
+
+                </div>              
+            </div>
+        </div>
+    </section> -->
+
+    <!-- service section -->
+     <p id="skills_me"></p>
+    <section class="section">
+        <div class="container text-center">
+            <!--<p class="section-subtitle">What I Do ?</p> -->
+            <h6 class="section-title mb-6">Skills</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/code-slash.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Python</h6>
+                            <p class="subtitle">I am the most profficient in Python and I have made many projects with it since.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/browser-chrome.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Web Development</h6>
+                            <p class="subtitle">I am very familiar with web development using HTML, CSS and JS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/stack.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">.NET Framework</h6>
+                            <p class="subtitle">Currently learning the .NET framework and utlilising it for fullstack devleopment in C#.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/robot.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Robotics</h6>
+                            <p class="subtitle">I enjoy prototyping with Arduino and Raspberry Pi, making lots of robots and household projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+    <!-- Created an asynchronous worker service in C# using the .NET framework, for an automated
+                                    mail system. Extracted unsent email data from a SQL DB. Formatted the message, then sent via an SMTP server. Validated that the mails have been sent then updates the DB to reflect these changes -->
+    <!-- portfolio section -->
+     <p id="experience_me" ></p>
+    <section class="section" >
+        <div class="container text-center">
+            <!-- <p class="section-subtitle">What I Did ?</p> -->
+            <h6 class="section-title mb-6">Experience</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4" class="link" >
+                    <a href="#psp_detail" class="portfolio-card">
+                        <img src="assets/imgs/psp.png" class="portfolio-card-img" >    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Work Experience at PSP-IT</h4>
+
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4" class="link">
+                    <a href="#HS_detail" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/HS-logo1.png" class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 style="font-size: 20px;">Software Engineering fellowship</h4>
+                            </span>                         
+                        </span>                         
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a  class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/laptop-web-dev.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Web Designing</h4>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+
+<!-- exprerince detail section -->
+    <div class="section" id="psp_detail">
+        <div class="container" >
+            <h6 class="section-title mb-6">Work Experience : <u><a href ="https://www.psp-it.co.uk/" target ='_blank'>PSP-IT</a></u></h6>
+            <p >Created an asynchronous worker service in <b>C#</b> using the <b>.NET framework</b>, for an automated
+                mail system. This involved:</p>
+                <ul class ="exp_detail">
+                    <li>
+                        Extracting email data from a remote SQL database
+                    </li>
+                    <li>
+                        Formatting and sending any unsent emails via an SMTP server
+                    </li>
+                    <li>
+                        Using error handling to prevent issues if any emails fail to send
+                    </li>
+                    <li>
+                        Updating the database to reflect these changes for Atomicity, following the ACID rules
+                    </li>
+                </ul>
+                <p>
+                    In process of creating a REST Web API using ASP.NET CORE to manage an SQL database.</p>
+                    <p>Briefed on how scalable projects are managed and deployed with Microsoft Azure DevOps.</p>
+                    <p>Attended board meetings to learn and understand the workflow and how projects are coordinated and how tasks are delegated for maximum efficiency.</p>
+                </p>
+            <button onclick="window.open('assets/files/ref_brandon.jpg', '_blank')" class="btn btn-primary btn-lg">Reference: Mr Chilvers</button> 
+            <button onclick="window.open('assets/files/ref_deb.jpg', '_blank')" class="btn btn-primary btn-lg">Reference: Mrs Forrest</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container" id="HS_detail">
+            <h6 class="section-title mb-6">Software Engineering Fellowship : <u><a href ="https://headstarter.co/" target ='_blank'>Headstarter AI</a></u></h6>
+            <p>This program features the development of five AI projects across a five-week period. In the last project, our team will collaborate to launch a startup, aiming to draw in more than <u><b>1000+</b></u> users. The programme involves:</p>
+                <ul class ="exp_detail">
+                                    <li>Producing a portfolio website</li>
+                                    <li>Creating a Pantry Tracker application deployed with Google Firebase</li>
+                                    <li>Develop a Customer Support AI using OpenAI API</li>
+                                    <li>Launch an AI Flashcard App with a subscription model</li>
+                                    <li>Design an AI Rate My Professor using Pinecone and Embeddings</li>
+                                    <li>Weekly Hackathons</li>
+                                    <li>Support building personal brand, creating a strong social media presence and the importance of networking</li>
+                </ul>
+        </div>
+    </div>
+
+    
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Wish to email me?</h6>
+                    <button class="btn btn-info btn-md" onclick="copy_email_to_clipboard()" >imanj1470@gmail.com</button>
+                    
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-md my-font btn-light rounded" onclick="window.open('assets/files/CV.pdf', '_blank')">Download my resume</button>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    
+    
+
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+
+    <script src="assets/js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  -->
+
+
+</body>
+</html>
