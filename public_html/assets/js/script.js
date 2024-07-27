@@ -108,15 +108,19 @@ $('#nav-toggle').click(function(){
     
     function closeAlertBox() {
         const alertBox = document.getElementById('alert-box');
+
+
         alertBox.classList.remove('show');
         alertBox.classList.add('hide');
         // Add a slight delay before setting display to none
         setTimeout(() => {
             alertBox.style.display = 'none';
-        }, 500); // Match this timeout with the CSS transition duration
+        }, 500); // Match this timeout with the CSS transition duration 
+
+
     }
     
-    // Example usage
+
     function copy_email_to_clipboard() {
         navigator.clipboard.writeText('imanj1470@gmail.com').then(function() {
             showAlertBox('Email copied to clipboard!');
