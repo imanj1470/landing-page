@@ -122,10 +122,34 @@ $('#nav-toggle').click(function(){
     
 
     function copy_email_to_clipboard() {
+
+        var isIOS = document.navigator.userAgent.match(/ipad|iphone/i);
+        if (isiOSDevice) {
+	  
+            var editable = input.contentEditable;
+            var readOnly = input.readOnly;
+    
+            input.contentEditable = true;
+            input.readOnly = false;
+    
+            var range = document.createRange();
+            range.selectNodeContents(input);
+    
+            var selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+    
+            input.setSelectionRange(0, 999999);
+            input.contentEditable = editable;
+            input.readOnly = readOnly;
+    
+        }else{
+
         navigator.clipboard.writeText('imanj1470@gmail.com').then(function() {
             showAlertBox('Email copied to clipboard!');
         }, function(err) {
             console.error('Could not copy text: ', err);
         });
+        }
     }
     
