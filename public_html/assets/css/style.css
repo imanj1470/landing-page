@@ -11126,12 +11126,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
-  font-family: 'Baloo Paaji', cursive;
+  font-family: 'Lucida Consolei', cursive;
   color: #695aa6;
 }
 
 .my-font {
-  font-family: 'Baloo Paaji', cursive;
+  font-family: 'Lucida Console', cursive;
 }
 
 p {
@@ -11678,7 +11678,7 @@ pre .code {
           align-items: center;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
-  font-family: 'Baloo Paaji', cursive;
+  font-family: 'Lucida Console', cursive;
 }
 
 @media (prefers-reduced-motion: reduce) {
