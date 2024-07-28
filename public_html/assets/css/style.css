@@ -10706,7 +10706,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace !important;
 }
 
 .text-justify {
@@ -11126,12 +11126,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
-  font-family: 'Lucida Consolei';
+  font-family: 'Lucida Console', monospace;
   color: #695aa6;
 }
 
 .my-font {
-  font-family: 'Lucida Console';
+  font-family: 'Lucida Console', monospace;
 }
 
 p {
@@ -11678,7 +11678,7 @@ pre .code {
           align-items: center;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
-  font-family: 'Lucida Console';
+  font-family: 'Lucida Console', monospace;
 }
 
 @media (prefers-reduced-motion: reduce) {
