@@ -1,6 +1,7 @@
 
 // smooth scroll
 $(document).ready(function(){
+    $(this).scrollTop(0);
     $(".navbar .nav-link").on('click', function(event) {
 
         if (this.hash !== "") {
@@ -16,6 +17,7 @@ $(document).ready(function(){
             });
         } 
     });
+    
 });
 function copy_email_to_clipboard(){
     navigator.clipboard.writeText("imanj1470@gmail.com");

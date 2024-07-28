@@ -12136,6 +12136,13 @@ pre .code {
       -ms-flex-positive: 1;
           flex-grow: 1;
   max-width: 550px;
+  
+}
+.make_it_central{
+  display:flex;
+  justify-content: center;
+  margin: auto;
+  width:100%;
 }
 
 .header .header-content .header-title .up {
