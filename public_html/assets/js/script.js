@@ -124,7 +124,7 @@ $('#nav-toggle').click(function(){
     function copy_email_to_clipboard() {
 
         var isIOS = document.navigator.userAgent.match(/ipad|iphone/i);
-        if (isiOSDevice) {
+        if (isIOS) {
 	  
             var editable = input.contentEditable;
             var readOnly = input.readOnly;
