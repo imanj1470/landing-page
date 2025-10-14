@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-97TW87M8HF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-97TW87M8HF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-97TW87M8HF');
-</script>
+        gtag('config', 'G-97TW87M8HF');
+    </script>
 
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Iman Jimoh (a software engineer) personal portfolio website describing my past experience and my skills. Also includes place to contact Iman Jimoh and view his LinkedIn">
+    <meta name="description"
+        content="Iman Jimoh (a software engineer) personal portfolio website describing my past experience and my skills. Also includes place to contact Iman Jimoh and view his LinkedIn">
     <meta name="author" content="Iman Jimoh">
     <title>Iman Jimoh's Portfolio</title>
 
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
-	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-<!-- image thumbnail seo -->
-<meta property="og:title" content="Iman Jimoh's Portfolio"/>
-<meta property="og:image" content="https://i.ibb.co/rfFCFCL/Iman-Jimoh-website-portfolio-2.webp"/>
-<meta property="og:description" content="Iman Jimoh portfolio"/>
-<meta property="og:url" content="https://imanj1470.github.io/landing-page/"/>
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="627"/>
-<meta property="og:type" content="website"/> 
+    <!-- image thumbnail seo -->
+    <meta property="og:title" content="Iman Jimoh's Portfolio" />
+    <meta property="og:image" content="https://i.ibb.co/rfFCFCL/Iman-Jimoh-website-portfolio-2.webp" />
+    <meta property="og:description" content="Iman Jimoh portfolio" />
+    <meta property="og:url" content="https://imanj1470.github.io/landing-page/" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:type" content="website" />
 
 
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- floating alert buttotnf for email sucess -->
-     <div id="alert-box" class="alert alert-info alert-dismissible fade show" role="alert" style="display: none;">
-        <span  id="alert-message">imanj1470@gmail.com copied to clipboard!</span>
-       <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="closeAlertBox()">
+    <div id="alert-box" class="alert alert-info alert-dismissible fade show" role="alert" style="display: none;">
+        <span id="alert-message">imanj1470@gmail.com copied to clipboard!</span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="closeAlertBox()">
             <span aria-hidden="true">&times;</span>
 
     </div>
-    
+
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">Portfolio</a>         
+            <a class="logo" href="#">Portfolio</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -61,30 +64,33 @@
                 </li>
 
                 <li class="item ml-md-3">
-                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Contact me
-                     </a>
-                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="https://www.linkedin.com/in/imanjimoh/"  target = "_blank">LinkedIn</a>
-                        <button class="dropdown-item" onclick="copy_email_to_clipboard()" ><a style="color: #212529;" href="mailto:imanj1470@gmail.com">Email</a></button>
-                        <a class="dropdown-item" href="https://github.com/imanj1470" target ="_blank">GitHub</a>
-                        <button class="dropdown-item" onclick="openresume()" target = "_blank">Resume</button>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/imanjimoh/"
+                            target="_blank">LinkedIn</a>
+                        <button class="dropdown-item" onclick="copy_email_to_clipboard()"><a style="color: #212529;"
+                                href="mailto:imanj1470@gmail.com">Email</a></button>
+                        <a class="dropdown-item" href="https://github.com/imanj1470" target="_blank">GitHub</a>
+                        <button class="dropdown-item" onclick="openresume()" target="_blank">Resume</button>
 
-                     </div>
+                    </div>
                 </li>
             </ul>
             <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
                 <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
+                    <div class="hamburger-inner"></div>
                 </div>
             </a>
-        </div>          
+        </div>
     </nav><!-- End of Page Navbar -->
-    
+
 
     <!-- page header -->
     <header id="home" class="header make_it_central">
-        
+
         <div class="overlay "></div>
         <div class="header-content container">
             <h1 class="header-title">
@@ -93,76 +99,64 @@
                 <span class="down">I'm Iman Jimoh</span>
             </h1>
             <p class="header-subtitle">Software developer</p>
-            <button class="btn btn-primary" onclick="window.open('assets/files/CV.pdf', '_blank')" >Download Resume</button>            
-           
+            <button class="btn btn-primary" onclick="window.open('assets/files/CV.pdf', '_blank')">Download
+                Resume</button>
 
-            
 
-        </div>              
+
+
+        </div>
     </header><!-- end of page header -->
-<p id = "abt_me"></p>
-    <div  class="section">
+    <p id="abt_me"></p>
+    <div class="section">
         <div class="container">
             <h6 class="section-title mb-6">About me ?</h6>
             <p>
-                I'm an aspiring prospect Software engineer who is looking to study Computer Science at a top university. I have completed 4 A-levels, predicted 4 A*'s in the following subjects: 
-                <ul>
-                    <li>
-                        Computer Science
-                    </li>
-                    <li>
-                        Maths
-                    </li>
-                    <li>
-                        Further Maths
-                    </li>
-                    <li>
-                        Physics
-                    </li>
+                I'm a Systems Configuration Engineer at Anglian Water and I work with a team managing and maintaining
+                the systems behind the Modern Contact Centre. My role is to maintain the systems behind the call center,
+                managing callflows and producing digital software to imporve producitvity, producing as much value for
+                the business as possible within a team environment.
+                I enjoy programming, and I'm capable of producing high quality fullstack web applications, API
+                development and other backend services integrated with GenAI.
 
-                </ul>
-                <br>
-                <p>I have recently been accepted into the Software Engineering Fellowship programme with <u><b><a href="app.headstarter.com">Headstarter AI</a></b></u>. This programme involves building 5 AI projects over the span of five weeks. The final project entails creating a startup with a team, aiming to attract 1000+ users.</p>
+            <p>Languages / Frameworks / Platforms:</p>
+            <ul>
+                <li>
+                    JavaScript - NextJS / Angular
+                </li>
+                <li>
+                    Python
+                </li>
+                <li>
+                    C# (.NET)
+                </li>
+                <li>
+                    HTML / CSS
+                </li>
+                <li>
+                    Azure Cloud Services
+                </li>
+                <li>
+                    AWS Cloud
+                </li>
+                <li>
+                    Git
+                </li>
+
+            </ul>
+            <br>
+            <p>I have completed been the Software Engineering Fellowship programme with <u><b><a
+                            href="app.headstarter.com">Headstarter AI</a></b></u>. This programme involved building 5
+                GenAI
+                projects over the span of 7 weeks, Hackathons and meetings with startup founders, CEOS and FAANG
+                employees. This programme provided me with a multitude of software development and personal soft skills,
+                including rapid prototyping, collaborative problem-solving, effective communication, and a deeper
+                understanding of building AI-driven products in real world scenarios.</p>
             </p>
         </div>
     </div>
-
-    <!-- 
-            <div class="about">
-                <div class="about-img-holder">
-             
-                </div>
-                <div class="about-caption">
-                   
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        I'm an aspiring prospect Software engineer who is looking to study Computer Science at the University of Cambdridge. I currently study 4 A-levels at Hill House School. I'm predicted 4 A*'s in the following subjects: 
-                        <ul>
-                            <li>
-                                Computer Science
-                            </li>
-                            <li>
-                                Maths
-                            </li>
-                            <li>
-                                Further Maths
-                            </li>
-                            <li>
-                                Physics
-                            </li>
-
-                        </ul>
-                        <br>
-                        <p>I have recently been accepted into the Software Engineering Fellowship programme with <u><b><a href="app.headstarter.com">Headstarter AI</a></b></u>. This programme involves building 5 AI projects over the span of five weeks. The final project entails creating a startup with a team, aiming to attract 1000+ users.</p>
-                    </p>   
-
-                </div>              
-            </div>
-        </div>
-    </section> -->
-
     <!-- service section -->
-     <p id="skills_me"></p>
+    <p id="skills_me"></p>
     <section class="section">
         <div class="container text-center">
             <!--<p class="section-subtitle">What I Do ?</p> -->
@@ -172,36 +166,40 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/code-slash.svg"  class="icon">
+                            <img src="assets/imgs/code-slash.svg" class="icon">
                             <h6 class="title">Python</h6>
-                            <p class="subtitle">I am the most profficient in Python and I have made many projects with it since.</p>
+                            <p class="subtitle">Very profficent in Python, capable of creating automations and
+                                webscraping projects</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/browser-chrome.svg"  class="icon">
+                            <img src="assets/imgs/browser-chrome.svg" class="icon">
                             <h6 class="title">Web Development</h6>
-                            <p class="subtitle">I am very competent with fullstack web development using NextJS</p>
+                            <p class="subtitle">Competent in fullstack web development using modern web technologies
+                                such as NextJS and Angular</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/stack.svg"  class="icon">
+                            <img src="assets/imgs/stack.svg" class="icon">
                             <h6 class="title">.NET Framework</h6>
-                            <p class="subtitle">I am currently learning the .NET framework and utlilising it for fullstack development in C#.</p>
+                            <p class="subtitle">I can produce backend services, such as serverless services with Azure
+                                Functions</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
                         <div class="body">
-                            <img src="assets/imgs/robot.svg"  class="icon">
+                            <img src="assets/imgs/robot.svg" class="icon">
                             <h6 class="title">Robotics</h6>
-                            <p class="subtitle">I enjoy prototyping with Arduino and Raspberry Pi, making lots of robots and household projects.</p>
+                            <p class="subtitle">I enjoy prototyping with Arduino and Raspberry Pi, creating autonomous
+                                robots and IoT devices</p>
                         </div>
                     </div>
                 </div>
@@ -211,22 +209,21 @@
     <!-- Created an asynchronous worker service in C# using the .NET framework, for an automated
                                     mail system. Extracted unsent email data from a SQL DB. Formatted the message, then sent via an SMTP server. Validated that the mails have been sent then updates the DB to reflect these changes -->
     <!-- portfolio section -->
-     <p id="experience_me" ></p>
-    <section class="section" >
+    <p id="experience_me"></p>
+    <section class="section">
         <div class="container text-center">
             <!-- <p class="section-subtitle">What I Did ?</p> -->
             <h6 class="section-title mb-6">Experience</h6>
             <!-- row -->
             <div class="row">
-                <div class="col-md-4" class="link" >
-                    <a href="#psp_detail" class="portfolio-card">
-                        <img src="assets/imgs/psp.png" class="portfolio-card-img" >    
+                <div class="col-md-4">
+                    <a class="portfolio-card" href="#aw-detail">
+                        <img class="portfolio-card-img" src="assets/imgs/aw-logo.png" class="img-responsive rounded">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Work Experience at PSP-IT</h4>
-
-                            </span>                         
-                        </span>                     
+                                <h4>Systems Configuration Engineer at Anglian Water</h4>
+                            </span>
+                        </span>
                     </a>
                 </div>
                 <div class="col-md-4" class="link">
@@ -235,75 +232,116 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 style="font-size: 20px;">Software Engineering fellowship</h4>
-                            </span>                         
-                        </span>                         
+                            </span>
+                        </span>
                     </a>
                 </div>
-                <!--
-                <div class="col-md-4">
-                    <a  class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/laptop-web-dev.png" class="img-responsive rounded" >    
+                <div class="col-md-4" class="link">
+                    <a href="#psp_detail" class="portfolio-card">
+                        <img src="assets/imgs/psp.png" class="portfolio-card-img">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing</h4>
-                            </span>                         
-                        </span>                     
+                                <h4>Work Experience at PSP-IT</h4>
+
+                            </span>
+                        </span>
                     </a>
                 </div>
-                -->
             </div><!-- end of row -->
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
 
 
-<!-- exprerince detail section -->
-    <div class="section" id="psp_detail">
+    <!-- exprerince detail section -->
+    <div class="section" id="aw-detail">
+        <div class="container">
+            <h6 class="section-title mb-6">
+                Systems Configuration Engineer : <u><a href="https://www.anglianwater.co.uk/" target="_blank">Anglian
+                        Water</a></u>
+            </h6>
+            <p>
+                As a Systems Configuration Engineer at Anglian Water, I am responsible for maintaining and enhancing the
+                Modern Contact Centre. My role involves ensuring the reliability and efficiency of the systems that
+                support our internal agents and customers.
+            </p>
+            <ul>
+                <li>
+                    Design, implement, create and maintain digital products, such as an internal keyword search platform website for
+                    contact centre agents.
+                </li>
+                <li>
+                    Produce CI/CD pipelines to streamline deployment and uphold professional
+                    software engineering standards.
+                </li>
+                <li>
+                    To maintain and optimise callflows to improve operational efficiency and customer experience.
+                </li>
+                <li>
+                    Provide first line technical support for internal agents, resolving issues and ensuring minimal
+                    downtime.
+                </li>
+            </ul>
+            <p>
+                My work focuses on supporting day-to-day operations, delivering robust digital solutions, and working along a team to maintain the Modern Contact Center.
+            </p>
+        </div>
+    </div>
+    <div id="HS_detail" class="section">
         <div class="container" >
-            <h6 class="section-title mb-6">Work Experience : <u><a href ="https://www.psp-it.co.uk/" target ='_blank'>PSP-IT</a></u></h6>
-            <p >Created an asynchronous worker service in <b>C#</b> using the <b>.NET framework</b>, for an automated
+            <h6 class="section-title mb-6">Software Engineering Fellowship : <u><a href="https://headstarter.co/"
+                        target='_blank'>Headstarter AI</a></u></h6>
+            <p>This program features the development of five AI projects across a five-week period. In the last project,
+                our team will collaborate to launch a startup, aiming to draw <u><b>1000+</b></u> users. The programme
+                involves:</p>
+            <ul>
+                <li>Producing a portfolio website</li>
+                <li>Creating a Pantry Tracker application deployed with Google Firebase</li>
+                <li>Develop a Customer Support AI using OpenAI API</li>
+                <li>Launch an AI Flashcard App with a subscription model</li>
+                <li>Design an AI Rate My Professor using Pinecone and Embeddings</li>
+                <li>Weekly Hackathons</li>
+                <li>Support building personal brand, creating a strong social media presence and the importance of
+                    networking</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="psp_detail">
+        <div class="container">
+            <h6 class="section-title mb-6">Work Experience : <u><a href="https://www.psp-it.co.uk/"
+                        target='_blank'>PSP-IT</a></u></h6>
+            <p>Created an asynchronous worker service in <b>C#</b> using the <b>.NET framework</b>, for an automated
                 mail system. This involved:</p>
-                <ul >
-                    <li>
-                        Extracting email data from a remote SQL database
-                    </li>
-                    <li>
-                        Formatting and sending any unsent emails via an SMTP server
-                    </li>
-                    <li>
-                        Using error handling to prevent issues if any emails fail to send
-                    </li>
-                    <li>
-                        Updating the database to reflect these changes for Atomicity, following the ACID rules
-                    </li>
-                </ul>
-                <p>
-                    Started creating a REST Web API using ASP.NET CORE to manage an SQL database.</p>
-                    <p>Briefed on how scalable projects are managed and deployed with Microsoft Azure DevOps.</p>
-                    <p>Attended board meetings to learn and understand the workflow and how projects are coordinated. Learnt how tasks are delegated for maximum efficiency to meet deadlines.</p>
-                </p>
-            <button onclick="window.open('assets/files/ref_brandon.jpg', '_blank')" class="btn btn-primary btn-lg">Reference: Mr Chilvers</button> 
+            <ul>
+                <li>
+                    Extracting email data from a remote SQL database
+                </li>
+                <li>
+                    Formatting and sending any unsent emails via an SMTP server
+                </li>
+                <li>
+                    Using error handling to prevent issues if any emails fail to send
+                </li>
+                <li>
+                    Updating the database to reflect these changes for Atomicity, following the ACID rules
+                </li>
+            </ul>
+            <p>
+                Started creating a REST Web API using ASP.NET CORE to manage an SQL database.</p>
+            <p>Briefed on how scalable projects are managed and deployed with Microsoft Azure DevOps.</p>
+            <p>Attended board meetings to learn and understand the workflow and how projects are coordinated. Learnt how
+                tasks are delegated for maximum efficiency to meet deadlines.</p>
+            </p>
+            <button onclick="window.open('assets/files/ref_brandon.jpg', '_blank')"
+                class="btn btn-primary btn-lg">Reference: Mr Chilvers</button>
             <p></p>
-            <button onclick="window.open('assets/files/ref_deb.jpg', '_blank')" class="btn btn-primary btn-lg">Reference: Mrs Forrest</button>
+            <button onclick="window.open('assets/files/ref_deb.jpg', '_blank')"
+                class="btn btn-primary btn-lg">Reference: Mrs Forrest</button>
         </div>
     </div>
 
-    <div class="section">
-        <div class="container" id="HS_detail">
-            <h6 class="section-title mb-6">Software Engineering Fellowship : <u><a href ="https://headstarter.co/" target ='_blank'>Headstarter AI</a></u></h6>
-            <p>This program features the development of five AI projects across a five-week period. In the last project, our team will collaborate to launch a startup, aiming to draw <u><b>1000+</b></u> users. The programme involves:</p>
-                <ul >
-                                    <li>Producing a portfolio website</li>
-                                    <li>Creating a Pantry Tracker application deployed with Google Firebase</li>
-                                    <li>Develop a Customer Support AI using OpenAI API</li>
-                                    <li>Launch an AI Flashcard App with a subscription model</li>
-                                    <li>Design an AI Rate My Professor using Pinecone and Embeddings</li>
-                                    <li>Weekly Hackathons</li>
-                                    <li>Support building personal brand, creating a strong social media presence and the importance of networking</li>
-                </ul>
-        </div>
-    </div>
 
-    
+
+
 
     <!-- section -->
     <section class="section-sm bg-primary">
@@ -313,38 +351,41 @@
             <div class="row align-items-center">
                 <div class="col-sm offset-md-1 mb-4 mb-md-0">
                     <h6 class="title text-light">Wish to email me?</h6>
-                    <button class="btn btn-light btn-md" onclick="copy_email_to_clipboard()" ><a href="mailto:imanj1470@gmail.com">imanj1470@gmail.com</a></button>
-                    
+                    <button class="btn btn-light btn-md" onclick="copy_email_to_clipboard()"><a
+                            href="mailto:imanj1470@gmail.com">imanj1470@gmail.com</a></button>
+
                 </div>
                 <div class="col-sm offset-md-1 mb-4 mb-md-0">
                     <h6 class="title text-light">Want a copy of my CV?</h6>
-                    <button class="btn btn-md my-font btn-light rounded" onclick="window.open('assets/files/CV.pdf', '_blank')">Download</button>
-                    
+                    <button class="btn btn-md my-font btn-light rounded"
+                        onclick="window.open('assets/files/CV.pdf', '_blank')">Download</button>
+
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </section> <!-- end of section -->
 
-    
-    
 
-        </div><!-- end of container -->
+
+
+    </div><!-- end of container -->
     </section><!-- end of contact section -->
 
-	
-	<!-- core  -->
+
+    <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
 
     <script src="assets/js/script.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  -->
 
-<!-- meyawo - @DevCrud-->
+    <!-- meyawo - @DevCrud-->
 </body>
+
 </html>

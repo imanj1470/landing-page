@@ -11185,10 +11185,11 @@ p {
 
 .service-card {
   position: relative;
-  min-height: 230px;
+  min-height: 260px;
   border: 1px solid #dee2e6;
   overflow: hidden;
   border-radius: 3px;
+  padding: 0.3rem;
 }
 
 .service-card .body {
