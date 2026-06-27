@@ -12335,8 +12335,27 @@ margin: right 0px;
 
 .divider {
   opacity: 80%;
-  width: 90%;
+  width: 82vw;
   margin-top: 4rem;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.intro-text{
+  font-weight:300;
+  font-size: medium;
+}
+
+.intro-text b{
+  font-weight:700;
+  font-size: medium;
+}
+
+.main-text, p,li{
+  font-weight:500;
+  font-size: small;
+}
+
+.main-text li{
+  font-weight:500;
 }

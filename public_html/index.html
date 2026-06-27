@@ -59,11 +59,12 @@
                         Contact me
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="https://www.linkedin.com/in/imanjimoh/"
-                            target="_blank">LinkedIn</a>
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/imanjimoh/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
                         <button class="dropdown-item" onclick="copy_email_to_clipboard()"><a style="color: #212529;"
                                 href="mailto:imanj1470@gmail.com">Email</a></button>
-                        <a class="dropdown-item" href="https://github.com/imanj1470" target="_blank">GitHub</a>
+                        <a class="dropdown-item" href="https://github.com/imanj1470" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
                     </div>
                 </li>
             </ul>
@@ -96,54 +97,89 @@
     <div class="section mt-2">
         <div class="container">
             <h6 class="section-title mb-6">About me ?</h6>
-            <p>
+            <!-- <p>
                 I’m currently a Systems Configuration Engineer at Anglian Water, with a strong foundation in software
                 engineering. I enjoy designing and building reliable, scalable systems that solve practical business
                 problems, particularly within customer facing and operational platforms. My background spans full stack
                 web development, backend services, and GenAI driven applications, with a focus on clean architecture,
                 performance, and maintainability.
+            </p> -->
+            <p class="intro-text">
+                I'm an <b>A*</b> school leaver who manged to <b>break into tech</b> straight out of Sixth Form, with
+                experience
+                shipping enterprise grade software serving thousands of weekly requests for Anglian Water.
 
-            <div class="row p-2">
+                I have a broad range of technical skills, spanning fullstack software engineering, DevOps and the cloud.
+                Outside of programming, I also do device repair, robotics / IoT, train MMA and enjoy going on nature
+                walks.
+            </p>
+            <div class="row p-2 py-4">
                 <div class="col-md-4">
-                    <b>Languages / Scripting:</b>
+                    <b>Languages</b>
                     <ul>
-                        <li>JavaScript / TypeScript</li>
-                        <li>C#</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
+                        <li>C# (.NET)</li>
                         <li>Python</li>
+                        <li>TypeScript / JavaScript</li>
                         <li>SQL</li>
-                        <li>Azure Bicep (IaC)</li>
-                        <li>YAML (CI/CD)</li>
+                        <li>HTML & CSS</li>
                     </ul>
                 </div>
+
                 <div class="col-md-4">
-                    <b>Frameworks / Libraries:</b>
+                    <b>Frameworks & Libraries</b>
                     <ul>
                         <li>Angular</li>
-                        <li>NextJS</li>
-                        <li>React</li>
-                        <li>Node</li>
-                        <li>.NET</li>
+                        <li>React / Next.js</li>
                         <li>Flask</li>
-                        <li>Puppeteer</li>
                         <li>Playwright</li>
+                        <li>Karma / Jasmine</li>
+                        <li>MSTest / Moq</li>
                     </ul>
                 </div>
+
                 <div class="col-md-4">
-                    <b>Platforms:</b>
+                    <b>Cloud & DevOps</b>
                     <ul>
-                        <li>Azure Cloud</li>
+                        <li>Microsoft Azure</li>
                         <li>Azure DevOps</li>
-                        <li>GitHub (Git)</li>
+                        <li>Azure Bicep (IaC)</li>
+                        <li>CI/CD Pipelines (YAML)</li>
                         <li>Google Firebase</li>
-                        <li>Amazon AWS</li>
-                        <li>Langchain</li>
-                        <li>Pinecone</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <b>AI & Automation</b>
+                    <ul>
+                        <li>LangChain</li>
+                        <li>Pinecone Vector Database</li>
+                        <li>Retrieval-Augmented Generation (RAG)</li>
+                        <li>Web Scraping</li>
+                        <li>REST API Integration</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <b>Engineering Practices</b>
+                    <ul>
+                        <li>Test-Driven Development (TDD)</li>
+                        <li>Unit & Integration Testing</li>
+                        <li>User Acceptance Testing (UAT)</li>
+                        <li>API Debugging</li>
+                        <li>Agile Development</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <b>Tools</b>
+                    <ul>
+                        <li>Git (Github)</li>
                         <li>ServiceNow</li>
                         <li>Figma</li>
+                        <li>Postman</li>
                     </ul>
                 </div>
+
             </div>
 
         </div>
@@ -156,16 +192,6 @@
             <h6 class="section-title mb-6">Skills</h6>
             <!-- row -->
             <div class="skills-grid">
-                <div class="service-card-min-width">
-                    <div class="service-card">
-                        <div class="body justify-content-center w-100">
-                            <img src="assets/imgs/code-slash.svg" class="icon">
-                            <h6 class="title">Python</h6>
-                            <p class="subtitle">Create automations, webscraping with Playwright, backend and API
-                                development with Flask / FastAPI</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="service-card-min-width">
                     <div class="service-card">
                         <div class="body">
@@ -188,17 +214,31 @@
                 </div>
                 <div class="service-card-min-width">
                     <div class="service-card">
+                        <div class="body justify-content-center w-100">
+                            <img src="assets/imgs/code-slash.svg" class="icon">
+                            <h6 class="title">Python</h6>
+                            <p class="subtitle">Can create automations, webscraping with Playwright / BS4, and general
+                                scripting</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card-min-width">
+                    <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/robot.svg" class="icon">
                             <h6 class="title">Robotics</h6>
                             <p class="subtitle">I enjoy prototyping with Arduino and Raspberry Pi, creating autonomous
-                                robots and IoT devices</p>
+                                robots and IoT devices.<br>
+                                 
+                                <a class="mt-1" href="https://www.instructables.com/member/ImanJimoh/"
+                                    target="_blank" rel="noreferrer">Check out my old tutorials</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div><!-- end of row -->
         </div>
-                <hr class="divider"/>
+        <hr class="divider" />
 
     </section><!-- end of service section -->
 
@@ -247,10 +287,11 @@
 
     <!-- exprerince detail section -->
     <div class="section-scroll-to-ref" id="aw-detail"></div>
-    <div class="section pt-8">
+    <div class="section pt-8 main-text">
         <div class="container">
             <h6 class="section-title">
-                Systems Configuration Engineer: <u><a href="https://www.anglianwater.co.uk/" target="_blank">Anglian
+                Systems Configuration Engineer: <u><a href="https://www.anglianwater.co.uk/" target="_blank"
+                        rel="noopener noreferrer">Anglian
                         Water</a></u>
             </h6>
             <p>
@@ -297,14 +338,14 @@
                 </li>
             </ul>
         </div>
-        <hr class="divider"/>
+        <hr class="divider" />
     </div>
 
     <div class="section-scroll-to-ref" id="HS_detail"></div>
     <div class="section">
         <div class="container">
             <h6 class="section-title">Software Engineering Fellowship: <u><a href="https://headstarter.co/"
-                        target='_blank'>Headstarter AI</a></u></h6>
+                        target="_blank" rel="noopener noreferrer">Headstarter AI</a></u></h6>
             <p>I have completed the Software Engineering Fellowship programme with Headstarter AI. This programme
                 involved building 5 GenAI projects over the span of 7 weeks, Hackathons and meetings with startup
                 founders, CEOS and FAANG employees. This programme provided me with a multitude of software development
@@ -330,14 +371,14 @@
                     networking</li>
             </ul>
         </div>
-        <hr class="divider"/>
+        <hr class="divider" />
     </div>
 
     <div class="section-scroll-to-ref" id="psp_detail"></div>
     <div class="section" id="psp_detail">
         <div class="container">
-            <h6 class="section-title">Work Experience: <u><a href="https://www.psp-it.co.uk/"
-                        target='_blank'>PSP-IT</a></u></h6>
+            <h6 class="section-title">Work Experience: <u><a href="https://www.psp-it.co.uk/" target="_blank"
+                        rel="noopener noreferrer">PSP-IT</a></u></h6>
             <p>Created an asynchronous worker service in <b>C#</b> using the <b>.NET framework</b>, for an automated
                 mail system. This involved:</p>
             <ul>
@@ -387,7 +428,9 @@
                 <div class="col-sm">
                     <h6 class="title text-light">Wish to email me?</h6>
                     <button class="btn btn-light btn-md" onclick="copy_email_to_clipboard()"><a
-                            href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x69;&#x6d;&#x61;&#x6e;&#x6a;&#x31;&#x34;&#x37;&#x30;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x69;&#x6d;&#x61;&#x6e;&#x6a;&#x31;&#x34;&#x37;&#x30;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></button>
+                            href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x69;&#x6d;&#x61;&#x6e;&#x6a;&#x31;&#x34;&#x37;&#x30;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"
+                            target="_blank"
+                            rel="noopener noreferrer">&#x69;&#x6d;&#x61;&#x6e;&#x6a;&#x31;&#x34;&#x37;&#x30;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></button>
 
                 </div>
             </div> <!-- end of row -->
