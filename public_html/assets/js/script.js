@@ -128,7 +128,7 @@ $('#nav-toggle').click(function(){
        
 
         navigator.clipboard.writeText('imanj1470@gmail.com').then(function() {
-            showAlertBox('Email copied to clipboard!');
+            showAlertBox('Email copied!');
         }, function(err) {
             console.error('Could not copy text: ', err);
         });

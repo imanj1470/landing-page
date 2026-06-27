@@ -64,8 +64,6 @@
                         <button class="dropdown-item" onclick="copy_email_to_clipboard()"><a style="color: #212529;"
                                 href="mailto:imanj1470@gmail.com">Email</a></button>
                         <a class="dropdown-item" href="https://github.com/imanj1470" target="_blank">GitHub</a>
-                        <button class="dropdown-item" onclick="openresume()" target="_blank">Resume</button>
-
                     </div>
                 </li>
             </ul>
@@ -81,16 +79,16 @@
     <!-- page header -->
     <header id="home" class="header make_it_central">
 
-        <div class="overlay "></div>
+        <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
                 <span class="up">HI!</span>
                 <div></div>
-                <span class="down">I'm Iman Jimoh</span>
+                <span class="down">I'm Iman</span>
             </h1>
             <p class="header-subtitle">Software developer</p>
-            <button class="btn btn-primary" onclick="window.open('assets/files/CV.pdf', '_blank')">Download
-                Resume</button>
+            <button class="btn btn-primary btn-resume-cta" onclick="window.open('assets/files/CV.pdf', '_blank')">
+            Resume</button>
         </div>
     </header><!-- end of page header -->
     <p id="abt_me"></p>
@@ -157,9 +155,9 @@
             <h6 class="section-title mb-6">Skills</h6>
             <!-- row -->
             <div class="row">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 py-2">
                     <div class="service-card">
-                        <div class="body p-2">
+                        <div class="body justify-content-center w-100">
                             <img src="assets/imgs/code-slash.svg" class="icon">
                             <h6 class="title">Python</h6>
                             <p class="subtitle">Create automations, webscraping with Playwright, backend and API
@@ -167,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 py-2">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/browser-chrome.svg" class="icon">
@@ -177,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 py-2">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/stack.svg" class="icon">
@@ -187,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 py-2">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/robot.svg" class="icon">
@@ -200,14 +198,13 @@
             </div><!-- end of row -->
         </div>
     </section><!-- end of service section -->
-    <!-- Created an asynchronous worker service in C# using the .NET framework, for an automated
-                                    mail system. Extracted unsent email data from a SQL DB. Formatted the message, then sent via an SMTP server. Validated that the mails have been sent then updates the DB to reflect these changes -->
+    
     <!-- portfolio section -->
     <p id="experience_me"></p>
     <section class="section">
         <div class="container text-center">
             <!-- <p class="section-subtitle">What I Did ?</p> -->
-            <h6 class="section-title mb-6">Experience</h6>
+            <h6 class="section-title mb-4">Experience</h6>
             <!-- row -->
             <div class="row">
                 <div class="col-md-4">
@@ -236,7 +233,6 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Software Engineering Work Experience @ PSP-IT</h4>
-
                             </span>
                         </span>
                     </a>
@@ -247,9 +243,9 @@
 
 
     <!-- exprerince detail section -->
-    <div class="section" id="aw-detail">
+    <div class="section pt-2" id="aw-detail">
         <div class="container">
-            <h6 class="section-title mb-5">
+            <h6 class="section-title">
                 Systems Configuration Engineer: <u><a href="https://www.anglianwater.co.uk/" target="_blank">Anglian
                         Water</a></u>
             </h6>
@@ -300,7 +296,7 @@
     </div>
     <div id="HS_detail" class="section">
         <div class="container">
-            <h6 class="section-title mb-5">Software Engineering Fellowship: <u><a href="https://headstarter.co/"
+            <h6 class="section-title">Software Engineering Fellowship: <u><a href="https://headstarter.co/"
                         target='_blank'>Headstarter AI</a></u></h6>
             <p>I have completed the Software Engineering Fellowship programme with Headstarter AI. This programme
                 involved building 5 GenAI projects over the span of 7 weeks, Hackathons and meetings with startup
@@ -330,7 +326,7 @@
     </div>
     <div class="section" id="psp_detail">
         <div class="container">
-            <h6 class="section-title mb-5">Work Experience: <u><a href="https://www.psp-it.co.uk/"
+            <h6 class="section-title">Work Experience: <u><a href="https://www.psp-it.co.uk/"
                         target='_blank'>PSP-IT</a></u></h6>
             <p>Created an asynchronous worker service in <b>C#</b> using the <b>.NET framework</b>, for an automated
                 mail system. This involved:</p>
@@ -355,11 +351,16 @@
             <p>Attended board meetings to learn and understand the workflow and how projects are coordinated, reviewing
                 the SDLC (Software Development Lifecycle).</p>
             </p>
-            <button onclick="window.open('assets/files/ref_brandon.jpg', '_blank')"
-                class="btn btn-primary btn-lg">Reference: Mr Chilvers</button>
-            <p></p>
-            <button onclick="window.open('assets/files/ref_deb.jpg', '_blank')"
-                class="btn btn-primary btn-lg">Reference: Mrs Forrest</button>
+
+            <div class="m-auto py-3 flex-column align-items-center justify-content-center">
+                <h4 class="text-center">References</h4>
+                <div class="d-flex flex-row align-items-center justify-content-center mx-2 pt-1">
+                    <button onclick="window.open('assets/files/ref_brandon.jpg', '_blank')"
+                        class="btn btn-primary btn-lg mx-1">Mr Chilvers</button>
+                    <button onclick="window.open('assets/files/ref_deb.jpg', '_blank')"
+                        class="btn btn-primary btn-lg mx-1">Mrs Forrest</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -373,16 +374,10 @@
         <div class="container text-center text-sm-left">
             <!-- row -->
             <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                <div class="col-sm offset-md-1 mb-md-0">
                     <h6 class="title text-light">Wish to email me?</h6>
                     <button class="btn btn-light btn-md" onclick="copy_email_to_clipboard()"><a
                             href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x69;&#x6d;&#x61;&#x6e;&#x6a;&#x31;&#x34;&#x37;&#x30;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x69;&#x6d;&#x61;&#x6e;&#x6a;&#x31;&#x34;&#x37;&#x30;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></button>
-
-                </div>
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Want a copy of my CV?</h6>
-                    <button class="btn btn-md my-font btn-light rounded"
-                        onclick="window.open('assets/files/CV.pdf', '_blank')">Download</button>
 
                 </div>
             </div> <!-- end of row -->
