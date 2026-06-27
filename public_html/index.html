@@ -88,11 +88,12 @@
             </h1>
             <p class="header-subtitle">Software developer</p>
             <button class="btn btn-primary btn-resume-cta" onclick="window.open('assets/files/CV.pdf', '_blank')">
-            Resume</button>
+                Resume</button>
         </div>
     </header><!-- end of page header -->
-    <p id="abt_me"></p>
-    <div class="section">
+
+    <div class="section-scroll-to-ref" id="abt_me"></div>
+    <div class="section mt-2">
         <div class="container">
             <h6 class="section-title mb-6">About me ?</h6>
             <p>
@@ -148,14 +149,14 @@
         </div>
     </div>
     <!-- service section -->
-    <p id="skills_me"></p>
+    <div class="section-scroll-to-ref" id="skills_me"></div>
     <section class="section">
         <div class="container text-center">
             <!--<p class="section-subtitle">What I Do ?</p> -->
             <h6 class="section-title mb-6">Skills</h6>
             <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3 py-2">
+            <div class="skills-grid">
+                <div class="service-card-min-width">
                     <div class="service-card">
                         <div class="body justify-content-center w-100">
                             <img src="assets/imgs/code-slash.svg" class="icon">
@@ -165,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 py-2">
+                <div class="service-card-min-width">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/browser-chrome.svg" class="icon">
@@ -175,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 py-2">
+                <div class="service-card-min-width">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/stack.svg" class="icon">
@@ -185,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 py-2">
+                <div class="service-card-min-width">
                     <div class="service-card">
                         <div class="body">
                             <img src="assets/imgs/robot.svg" class="icon">
@@ -198,9 +199,9 @@
             </div><!-- end of row -->
         </div>
     </section><!-- end of service section -->
-    
+
     <!-- portfolio section -->
-    <p id="experience_me"></p>
+    <div class="section-scroll-to-ref" id="experience_me"></div>
     <section class="section">
         <div class="container text-center">
             <!-- <p class="section-subtitle">What I Did ?</p> -->
@@ -243,7 +244,8 @@
 
 
     <!-- exprerince detail section -->
-    <div class="section pt-2" id="aw-detail">
+    <div class="section-scroll-to-ref" id="aw-detail"></div>
+    <div class="section pt-8">
         <div class="container">
             <h6 class="section-title">
                 Systems Configuration Engineer: <u><a href="https://www.anglianwater.co.uk/" target="_blank">Anglian
@@ -294,7 +296,9 @@
             </ul>
         </div>
     </div>
-    <div id="HS_detail" class="section">
+
+    <div class="section-scroll-to-ref" id="HS_detail"></div>
+    <div class="section">
         <div class="container">
             <h6 class="section-title">Software Engineering Fellowship: <u><a href="https://headstarter.co/"
                         target='_blank'>Headstarter AI</a></u></h6>
@@ -324,6 +328,8 @@
             </ul>
         </div>
     </div>
+
+    <div class="section-scroll-to-ref" id="psp_detail"></div>
     <div class="section" id="psp_detail">
         <div class="container">
             <h6 class="section-title">Work Experience: <u><a href="https://www.psp-it.co.uk/"

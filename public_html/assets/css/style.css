@@ -11213,6 +11213,22 @@ p {
   transition: all, 0.3s;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+@media (max-width: 650px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.service-card {
+    height: 270px
+}
+
 @media (prefers-reduced-motion: reduce) {
   .service-card .body img.icon {
     -webkit-transition: none;
@@ -11231,6 +11247,8 @@ p {
   transition: all, 0.3s;
   text-align: center;
   padding-inline: 1rem;
+  justify-content: center;
+  align-items: center; 
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -11247,7 +11265,7 @@ p {
 }
 
 .service-card:hover .body .subtitle {
-  bottom: 2rem;
+  bottom: 1.2rem;
   opacity: 1;
   visibility: visible;
   font-size: medium;
@@ -12226,7 +12244,7 @@ pre .code {
     background-size: cover;
   }
   .header-content {
-    padding-left: calc(100% / 20) !important;
+    padding-left: calc(100% / 40) !important;
   }
 }
 
@@ -12311,5 +12329,7 @@ margin: right 0px;
 }
 
 
-#p {
+.section-scroll-to-ref{
+  padding-top: 70px;
+  margin-top: -70px;
 }
