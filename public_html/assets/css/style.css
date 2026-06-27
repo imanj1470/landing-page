@@ -2765,11 +2765,11 @@ fieldset:disabled a.btn {
 }
 
 .btn-resume-cta{
-  margin-top: 0;
-  width: 40%;
-  max-width: auto;
-  padding-left: 5rem;
-  
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: medium;
+  opacity: 0.95;
 }
 
 .btn-primary {
@@ -12145,12 +12145,10 @@ pre .code {
 }
 
 .header .header-content {
-  margin-top: 20px;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  max-width: 550px;
+  display: inline-block;
+  width: fit-content;
+  max-width: none;
+  
 }
 .make_it_central{
   display:flex;
@@ -12176,7 +12174,8 @@ pre .code {
 }
 
 .header .header-content .header-subtitle {
-  font-size: calc(13px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(15px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
+  font-weight: 300;
   letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
   opacity: .8;
   margin-top: -10px;
@@ -12227,7 +12226,7 @@ pre .code {
     background-size: cover;
   }
   .header-content {
-    padding-left: calc(100% / 5) !important;
+    padding-left: calc(100% / 20) !important;
   }
 }
 
